@@ -471,3 +471,55 @@ body {
   margin: 0;
   color: rgba(0, 0, 0, 0.5);
 }
+
+.ads__images {
+  display: flex;
+  margin: 20px 0;
+}
+.ads__images img {
+  width: 50%;
+}
+.ads__images h1 {
+  text-transform: initial;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ads__subscribe {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .ads__subscribe {
+    margin: 30px;
+  }
+}
+.ads__subscribe h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.ads__subscribe p {
+  color: rgba(0, 0, 0, 0.6);
+  margin: 10px 0;
+  font-size: 14px;
+}
+.ads__subscribe input {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.ads__subscribe button {
+  margin-top: 10px;
+  padding: 20px;
+  color: white;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+.ads__subscribe button:hover {
+  box-shadow: 0px 7px 7px #494848;
+}
