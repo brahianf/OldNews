@@ -1,0 +1,28 @@
+-var titles = ["hollywood factory","devy's public house","Telephone is here"]
+-var texts = ["BEERS * bourbons * bread","Los Angeles - Montereal - New York","March 24, 1976","$18.90","Los angeles Montereal"]
+-var srcImages =["https://i.imgur.com/e5TDxFm.jpg","https://i.imgur.com/pB5WKAw.jpg"]
+
+header.header
+	div.header__left
+		logo.header__left--logo: img(src=""+srcImages[0])
+		div.header__left--info
+			h2 #{titles[1]}
+			p #{texts[0]}
+			p #{texts[1]}
+	div.header__center
+		h1 #{titles[0]}
+		p #{texts[2]}
+	div.header__rigth
+		div
+			h5 #{titles[2]}
+			div.header__rigth--thelepone
+				h4 #{texts[3]}
+				p #{texts[4]}
+		div
+			logo.header__rigth--logo2: img(src=""+srcImages[1])
+	//- nav.nav--header: ul
+	//- 	li: a(href="#") InicioS
+	//- 	li: a(href="#") Home 
+	//- a(href="#" class=header__busqueda)
+	//- i.fas.fa-search
+	//- span Search
