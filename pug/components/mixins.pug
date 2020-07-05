@@ -1,0 +1,73 @@
+
+mixin biography__video(title,paragraph,link,linkImage)
+	.biography__video
+		.biography__video--desciption
+			h2=title
+			p=paragraph
+			a(href="")
+				p=link
+			img(src="", alt="")
+		.biography__video--image
+			img(src=""+linkImage)
+
+mixin biography__read(linkImage,title,date,paragraph,link)
+	.biography__read
+		.biography__read--title
+			.biography__read--image
+				img(src=""+linkImage, alt="")
+			.biography__read--description
+				h1=title
+				p=date
+		.biography__read--text
+			p=paragraph
+			a(href="")
+				p=link
+
+mixin biography__book(linkImage)
+	.biography__book
+		img(src=""+linkImage, alt="Image Book")
+
+
+mixin coverPage__image(linkImage)
+	.coverPage__image
+		img(src=""+linkImage, alt="Image Cover")
+mixin coverPage__text(category, linkImage, title,paragraph)
+	.coverPage__text
+		.coverPage__text--category
+			p=category
+			img(src=""+linkImage, alt="")
+		.coverPage__text--text
+			h1=title
+			p=paragraph
+mixin coverPage__footer(linkImage, title, date, link1)
+	.coverPage__footer
+		img(src=""+linkImage, alt="")
+		.coverPage__footer--title
+			h2=title
+			p=date
+		.coverPage__footer--icons
+			img(src=""+link1, alt="")
+
+
+mixin ads__buy(linkImage)
+	img(src=""+linkImage, alt="")
+
+mixin ads__images(link1,link2,link3,paragraph1,paragraph2, paragraph3)
+	.ads__images
+		img(src=""+link1, alt="")
+		h1=paragraph1
+	.ads__images
+		img(src=""+link2, alt="")
+		h1=paragraph2
+	.ads__images
+		img(src=""+link3, alt="")
+		h1=paragraph3
+
+
+mixin ads__subscribe(title,paragraph,msjButton)
+	.ads__subscribe
+		h1=title
+		p=paragraph
+		input(type="text" placeholder="Email address")
+		button=msjButton
+

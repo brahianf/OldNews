@@ -2,7 +2,23 @@ extend components/template.pug
 block container
     section.container
         section.container__biography
-
+            +biography__video(
+                "The Great Kate", 
+                "Shoot'em. Shot 'em. It'a better way to live! Check out Katharine Hepburn in race crank form in this 1979 60 Minutos interview, maxing on aging, humanity, movies, and bores","whatch video",
+                "https://i.imgur.com/yETzMJr.jpg")
+            +biography__read("https://i.imgur.com/K8YLCeF.jpg","Everyone In Old Hollywood Was on Acid","March 20, 1996","Before Scoemtology took hold, before ther forgot their mantras, before the baby foot diet, Vanity Fair reminds","read more")
+            +biography__book("https://i.imgur.com/cV0dHvf.jpg")
         main.container__coverPage
-
+            +coverPage__image("https://i.imgur.com/7QKIoEd.jpg")
+            +coverPage__text("trending","https://i.imgur.com/9vMQDJZ.jpg","Brunettes, Redheads, Picket Does Gentlemen Prefer Blondes", "But Perhaps the most interesting component of the stoy is the proto-Femine Mystique liberating power the drug held for many women. The community of disconected Hollywood wives...")
+            +coverPage__footer("https://i.imgur.com/rd5QnBs.jpg", "Jinneuvile Martin Jose", "March 12, 1996", "https://i.imgur.com/Pc0DQHw.jpg")
         .container__ads
+        +ads__buy("https://i.imgur.com/XqPoheE.jpg")
+            +ads__images("https://i.imgur.com/RThpcli.jpg",
+                        "https://i.imgur.com/RThpcli.jpg",
+                        "https://i.imgur.com/RThpcli.jpg",
+                        "The brand new Hollywood horror movie is here!",
+                        "The Smoking hero of vela and Gobson!",
+                        "elizabeth taylor's life in front of the camera",
+                        )
+            +ads__subscribe("Susbscribe to all the news", "Never miss the latest updates","SIGN ME UP")
