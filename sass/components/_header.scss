@@ -1,0 +1,115 @@
+.header{
+
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+
+
+    @include media(tablet){
+        margin: 15px 0;
+        grid-template-columns: none;
+        grid-template-areas:"title title"
+                            "descrip telphone";
+        width: 100%;
+    };
+    
+    &__left {
+        display: flex;
+        @include media(tablet){
+            grid-area: descrip;
+            justify-content: center;
+        };
+        &--logo img{
+            width: 50px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        &--info{
+            margin: 5px;
+            margin-top: 10px;
+            height: min-content;
+            font-size: 10px;
+            & h2 {
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+            // & SPAAAAAN {
+
+            // }
+            & p{
+                margin: 0;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__center {
+        margin: 5px auto;
+        border-top: 1px solid get-opacity($color-primario, .20);
+        border-bottom: 1px solid get-opacity($color-primario, .20);
+        width: 80%;
+        height: min-content;
+        text-align: center;
+        @include media(tablet){
+            grid-area: title title;
+            @include grid-column(1,3);
+        };
+        & h1 {
+            margin: 8px;
+            text-transform: uppercase;
+            cursor: pointer;
+            // @include titulos($fuente1);
+            word-spacing: 10px;;
+            letter-spacing: 1.8px;
+            font-size: 18px;
+        }
+        & p {
+            margin: 8px;
+            font-size: 12px;
+            @include titulos($fuente1);
+            color: get-opacity($color-primario, .50);
+        }
+    }
+
+    &__rigth{
+        margin: 5px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        width: 50%;
+        height: min-content;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        justify-self: right;
+        border-bottom: 1px solid get-opacity($color-primario, .20);
+        @include media(tablet){
+            grid-area: telphone;
+            justify-content: center;
+        };
+        &--thelepone{
+            display: flex;
+        }
+        & h4{
+            margin: 2px;
+            padding-right: 5px;
+            border-right: .9px solid get-opacity($color-primario, 1);;
+            align-self: center;
+        }
+        & h5 {
+            margin: 2px;
+            color: get-opacity($color-primario, .60);
+            font-size: 16px;
+        }
+
+        & p{
+            margin: 2px;
+            font-size: 10px;
+            width: min-content;
+        }
+        &--logo2 img{
+            width: 70px;
+            align-self: baseline;
+        }
+    }
+}
