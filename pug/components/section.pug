@@ -1,0 +1,16 @@
+-var subtitle = ["d Luke 7.2", "Planet of te Aples 9.1", "The Godfather 9.6","It's a Wonderful time 7.5", "The Third Man 6.9","Dr. Strangelove 8.9", "Cool Han"]
+-var categories = ["latest","featured", "automobiles", "celebreties", "hollywood directory", "trending movies", "book tickets", "fans", "books"]
+-var srcIcons =["https://i.imgur.com/Na5dKkt.jpg","https://i.imgur.com/rZBjxtb.jpg"]
+
+    div.subtitles
+        ul
+            each sub in subtitle
+                p #{sub}
+
+    div.categories
+        div.categories__menu: img(src="" + srcIcons[0])
+        div.categories__titles
+            ul
+                each cat in categories
+                    p #{cat}
+        div.categories__search: img(src="" + srcIcons[1])
