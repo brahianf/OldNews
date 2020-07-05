@@ -162,3 +162,34 @@ body {
   width: 70px;
   align-self: baseline;
 }
+
+.subtitles {
+  margin: 5px;
+  padding: 5px;
+  border-top: 1.2px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1.2px solid rgba(0, 0, 0, 0.4);
+}
+.subtitles ul {
+  display: grid;
+  grid-template-columns: 0.4fr repeat(5, 1fr) 0.4fr;
+  justify-content: space-around;
+  gap: 5px;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(248, 182, 216, 0.6);
+}
+.subtitles ul p {
+  margin: 0;
+  height: -webkit-max-content;
+  height: max-content;
+  border-right: 1.2px solid rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  font-weight: 510;
+  word-spacing: 2px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .subtitles ul p {
+    font-size: 14px;
+  }
+}
